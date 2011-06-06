@@ -41,7 +41,7 @@ class File(CMSPlugin):
         return os.path.exists(self.file.path)
         
     def get_file_name(self):
-        return os.path.basename(self.file.path)
+        return os.path.basename(self.file.url)
         
     def get_ext(self):
         return os.path.splitext(self.get_file_name())[1][1:].lower()
